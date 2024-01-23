@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} Бюро по защите персональных данных {% endblock %}
+{% block header %}
+Пользователь: {{user}} <br>
+{{user.userprofile.department}}
+{% endblock %}
+
+{% block content %}
+
+<h1>Страница с тестами</h1>
+{% endblock %}
+
