@@ -4,6 +4,10 @@
 {% block header %}
 Пользователь: {{user}} <br>
 {{user.userprofile.department}}
+<form action="{% url 'logout' %}" method="post">
+  {% csrf_token %}
+  <button type="submit">Выход</button>
+</form>
 {% endblock %}
 
 {% block content %}

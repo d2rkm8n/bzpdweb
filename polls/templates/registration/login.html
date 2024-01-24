@@ -7,8 +7,8 @@
 {%block title %} БЗПД - Login {% endblock %}
 
 {%block content %}
-
-<form class="form" method="post">
+<main>
+    <form class="form" method="post">
     {% csrf_token %}
 
     <h1 class="form_title"> Вход </h1>
@@ -27,5 +27,7 @@
     {{ form.errors }}
 
 </form>
+</main>
+
 
 {% endblock%}

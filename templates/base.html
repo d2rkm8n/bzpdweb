@@ -10,18 +10,29 @@
 
 </head>
 <body>
-{% block header %}
 
-{% endblock %}
+<header>
+    {% block header %}
+    <div>
+        <div>logo</div>
+        <div>Бюро по защите персональных данных</div>
+    </div>
+    {% endblock %}
+</header>
 
 
-{% block content %}
+<main>
+    {% block content %}
 
-{% endblock %}
+    {% endblock %}
+</main>
 
 
-{% block footer %}
+<footer>
+    {% block footer %}
+    <div>footer</div>
+    {% endblock %}
+</footer>
 
-{% endblock %}
 </body>
 </html>

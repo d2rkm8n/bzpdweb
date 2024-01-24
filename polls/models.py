@@ -39,4 +39,3 @@ class VoteResult(models.Model):
     class Meta:
         verbose_name = 'Результат'
         verbose_name_plural = 'Результаты'
-
