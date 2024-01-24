@@ -13,10 +13,21 @@
 
 <header>
     {% block header %}
-    <div>
-        <div>logo</div>
-        <div>Бюро по защите персональных данных</div>
-    </div>
+
+    <div class="logo">logo</div>
+    <div class="inscription">Бюро по защите персональных данных</div>
+        {% if user.is_authenticated %}
+           <form action="{% url 'logout' %}" method="post">
+                {% csrf_token %}
+               <button type="submit">Выход</button>
+            </form>
+        {% else %}
+            <form action="{% url 'login' %}" method="post">
+                {% csrf_token %}
+               <button type="submit">Вход</button>
+            </form>
+        {% endif %}
+
     {% endblock %}
 </header>
 

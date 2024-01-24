@@ -25,6 +25,9 @@ header {
     height: 12vh;
 }
 
+.inscription {
+    width: 90%;
+}
 
 footer {
     display: flex;
